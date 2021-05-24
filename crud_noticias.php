@@ -1,20 +1,21 @@
 <?php include ("db.php")?>
 <?php include ("includes/header.php")?>
-
+<div class="container p-1">    
+    <h1>ABM Noticias</h1>
+</div>
 <div class="container p-4">
 
     <div class="row">
 
         <div class="col-md-4">
         <?php if(isset($_SESSION['mensaje'])){?>
-
-<!-- mensaje de noticia creada correctamente -->
+<!-- mensaje de alerta por ABM de noticia -->
         <div class="alert alert-<?= $_SESSION['tipo_mensaje']?> alert-dismissible fade show" role="alert">
         <?= $_SESSION['mensaje']?>
         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
         </div>
 
-        <?php //elimino los datos de sesión
+        <?php //elimino los datos de sesión para que el mensaje no esté todo el tiempo
         session_unset();} ?>
             <div class="card card-body">
 
