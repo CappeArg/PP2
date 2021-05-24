@@ -10,16 +10,10 @@ include "db.php";
         $estado = $_POST['estado'];
         $archivos = $_POST['drive'];
         $linkaporte = $_POST['Aportar'];
-        echo "$titulo";
-        echo "$cuerpoproy";
-        echo "$imagen";
-        echo "$publicacion";
-       echo "$estado";
-       echo "$linkaporte";
 
-       $query = "INSERT INTO proyectos(TITULO, TEXTO, IMAGEN, ESTADO, PUBLICADO, ARCHIVOS, LINKAPORTE) VALUES ('$titulo','$cuerpoproy','$imagen','$publicacion','$estado', '$archivos', '$linkaporte')";
-       $result= mysqli_query($conexion,$query);
-       if(!$result){
+       $query = "INSERT INTO proyectos(TITULO, TEXTO, IMAGEN, ESTADO, PUBLICADO, ARCHIVOS, LINKAPORTE) VALUES ('$titulo','$cuerpoproy','$imagen','$estado', '$publicacion', '$archivos', '$linkaporte')";
+       $resultado= mysqli_query($conexion,$query);
+       if(!$resultado){
            die("La consulta falló");
        }
        else{

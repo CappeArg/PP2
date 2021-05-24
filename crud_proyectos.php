@@ -93,10 +93,10 @@
             <td><?php echo $fila['FECHA'];?></td>
             <td>
                 <a class="btn btn-secondary" href="editar_proyectos.php?id=<?php echo $fila['ID']?>">
-                <i class="far fa-edit"></i>
+                <i class="fas fa-pen-alt"></i>
                 </a> 
                 <a class="btn btn-danger" href="eliminar_proyectos.php?id=<?php echo $fila['ID']?>">
-                <i class="far fa-trash-alt"></i>
+                <i class="fas fa-trash"></i>
                 </a>
             </td>
 

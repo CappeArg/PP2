@@ -1,9 +1,9 @@
 <?php include ("db.php")?>
 <?php include ("includes/header.php")?>
-<div class="container p-1">    
+<div class="container p-4">    
     <h1>ABM Noticias</h1>
 </div>
-<div class="container p-4">
+<div class="container p-6">
 
     <div class="row">
 
@@ -67,10 +67,10 @@
             <td><?php echo $fila['FECHA'];?></td>
             <td>
                 <a class="btn btn-secondary" href="editar_noticias.php?id=<?php echo $fila['ID']?>">
-                <i class="far fa-edit"></i>
+                <i class="fas fa-pen-alt"></i>
                 </a> 
                 <a class="btn btn-danger" href="eliminar_noticias.php?id=<?php echo $fila['ID']?>">
-                <i class="far fa-trash-alt"></i>
+                <i class="fas fa-trash"></i>
                 </a>
             </td>
 
