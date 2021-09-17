@@ -86,6 +86,54 @@ p {
     text-align: center;
 }
 
+#log {
+    background-image: url("images/heroimg.jpg");
+    background-size: cover;
+}
+
+.modal-content {
+    background-color: rgb(70, 58, 58);
+    opacity: .85;
+    padding: 0 20px;
+    box-shadow: 0px 0px 5px #848484;
+}
+
+.user-img {
+    margin-top: -50px;
+    margin-bottom: 35px;
+}
+
+.user-img img {
+    width: 200;
+    height: 200px;
+}
+
+.main-section {
+    margin: 0 auto;
+    margin-top: 25%;
+    padding: 0;
+}
+
+#user-group {
+    padding: 5px;
+    height: 42px;
+    font-size: 18px;
+    border: 0;
+    border-radius: 5px;
+}
+
+#pass-group {
+    padding: 5px;
+    height: 42px;
+    font-size: 18px;
+    border: 0;
+    border-radius: 5px;
+}
+
+#principalog {
+    background-color: #1a1a1a;
+}
+
 @media (max-width: 575.98px) {
     h1 {
         font-size: 40px;
@@ -93,8 +141,14 @@ p {
     }
 }
 
-@media (max-width: 767.98px) {}
+td {
+    display: flex;
+    padding: 10px;
+}
+
+
+/* @media (max-width: 767.98px) {}
 
 @media (max-width: 991.98px) {}
 
-@media (max-width: 1199.98px) {}
+@media (max-width: 1199.98px) {} */

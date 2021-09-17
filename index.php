@@ -10,7 +10,7 @@ include "includes/headerpublic.php";
                 <p>
                     Cooperación Orientada a Resultados es una iniciativa que tiene como fin facilitar a la comunidad educativa la ayuda mutua
                 </p>
-                <a href="Noticias.html" class="btn btn-light topmargin-sm">
+                <a href="Noticias.php" class="btn btn-light topmargin-sm">
                      Saber Más..   <ion-icon name="search-sharp"></ion-icon>
                 </a>
             </div>

@@ -18,9 +18,9 @@
     <title>COR</title>
 </head>
 
-<body>
+<body style="padding-top: 220px;">
 
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
             <a class="navbar-brand" href="index.php"><img src="images/logoimg.png" class="logo-brand" alt="logo"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -40,6 +40,9 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="Prov.php" id="proov">Inscripción Proveedores</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="indexlog.php" id="admin">Ingreso Administrador</a>
                     </li>
                 </ul>
             </div>

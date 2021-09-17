@@ -71,16 +71,16 @@
         </div>
 
         <div class="col-md-8">
-        <table class="table table-bordered">
-            <thead>
-                <tr>
-                    <th>Titulo</th>
-                    <th>Fecha Creación</th>
-                    <th>Acciones</th>
-                </tr>
-            </thead>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Titulo</th>
+                        <th>Fecha Creación</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
             
-            <tbody>
+                <tbody>
             <?php 
             
             $query= "SELECT * FROM proyectos";
@@ -88,19 +88,19 @@
             
             while($fila=mysqli_fetch_array($resultado_proyectos)){?>
 
-            <tr>
-            <td><?php echo $fila['TITULO'];?></td>
-            <td><?php echo $fila['FECHA'];?></td>
-            <td>
+                <tr>
+                <td><?php echo $fila['TITULO'];?></td>
+                <td><?php echo $fila['FECHA'];?></td>
+                <td>
                 <a class="btn btn-secondary" href="editar_proyectos.php?id=<?php echo $fila['ID']?>">
                 <i class="fas fa-pen-alt"></i>
                 </a> 
                 <a class="btn btn-danger" href="eliminar_proyectos.php?id=<?php echo $fila['ID']?>">
                 <i class="fas fa-trash"></i>
                 </a>
-            </td>
+                </td>
 
-            </tr>
+                </tr>
 
             <?php }?>
             </tbody>
