@@ -18,8 +18,6 @@ if($pass == $clave){
 else{
 echo "error pass";
 }
- 
-// Resta desarrollar el encriptado de clave bash, el login y el acceso a determinadas funcionalidades
-// mediante el login
+
 
 ?>
